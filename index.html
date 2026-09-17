@@ -234,7 +234,7 @@ var GROUPS = [
 { id:'zasady', title:'Jak nadawać', lead:'Przeczytaj raz przed pierwszą służbą. Reszta ściągi to już same gotowce.',
   blocks:[
     { t:'prose', html:
-      '<p><strong>Central nie jest graczem.</strong> Nadajesz komunikat i robisz dalej swoje — nie czekasz na odpowiedź.</p>'+
+      '<p><strong>Control nie jest graczem.</strong> Nadajesz komunikat i robisz dalej swoje — nie czekasz na odpowiedź.</p>'+
       '<p>Radio ma być krótkie i konkretne. Jedna myśl na jedno nadanie, bez wstępów i bez tłumaczenia się.</p>' },
     { t:'ol', h:'Kolejność informacji przy zdarzeniu', items:[
       'CO się dzieje',
@@ -246,8 +246,8 @@ var GROUPS = [
     ]},
     { t:'prose', html:'<p><strong>Unikaj:</strong> „eee ogólnie mamy tutaj sytuacje i chyba coś się dzieje i potrzebuję pomocy”.</p>' },
     { t:'lines', h:'Stosuj:', lines:[
-      '[CALLSIGN] do Central, potrzebuję backupu, 2 podejrzanych, możliwa broń, [lokalizacja]',
-      '[CALLSIGN] do Central, pościg za czarnym Sultanem, 2 podejrzanych, kierunek centrum, możliwa broń'
+      '[CALLSIGN] do Control, potrzebuję backupu, 2 podejrzanych, możliwa broń, [lokalizacja]',
+      '[CALLSIGN] do Control, pościg za czarnym Sultanem, 2 podejrzanych, kierunek centrum, możliwa broń'
     ]},
     { t:'defs', h:'Asysta czy wsparcie', rows:[
       ['Asysta','Dodatkowa jednostka przy zwykłych czynnościach: kontrola drogowa, przeszukanie, zabezpieczenie interwencji.'],
@@ -261,7 +261,7 @@ var GROUPS = [
       'ile jednostek potrzebujesz'
     ]},
     { t:'lines', h:'Przykład pełnego wezwania', lines:[
-      '[CALLSIGN] do Central, Goma Street, proszę o asystę jednego wozu, grupa osób utrudnia interwencję'
+      '[CALLSIGN] do Control, Goma Street, proszę o asystę jednego wozu, grupa osób utrudnia interwencję'
     ]}
   ]},
 
@@ -269,24 +269,24 @@ var GROUPS = [
 { id:'sluzba', title:'Służba i patrol', lead:'Wejście na służbę, status, zejście.',
   blocks:[
     { t:'lines', h:'Wejście na służbę', lines:[
-      '[CALLSIGN] do Central, proszę o oznaczenie jako patrol',
-      '[CALLSIGN] do Central, proszę o oznaczenie do służby',
-      '[CALLSIGN] do Central, rozpoczynam patrol, proszę o oznaczenie'
+      '[CALLSIGN] do Control, proszę o oznaczenie jako patrol',
+      '[CALLSIGN] do Control, proszę o oznaczenie do służby',
+      '[CALLSIGN] do Control, rozpoczynam patrol, proszę o oznaczenie'
     ]},
     { t:'lines', h:'Powrót po przerwie', lines:[
-      '[CALLSIGN] do Central, wracam do patrolu',
-      '[CALLSIGN] do Central, ponownie do dyspozycji'
+      '[CALLSIGN] do Control, wracam do patrolu',
+      '[CALLSIGN] do Control, ponownie do dyspozycji'
     ]},
     { t:'lines', h:'Chwilowa niedostępność', lines:[
-      '[CALLSIGN] do Central, chwilowo niedostępny',
-      '[CALLSIGN] do Central, zajęty, proszę o chwilę',
-      '[CALLSIGN] do Central, proszę o wstrzymanie zgłoszeń, zajęty'
+      '[CALLSIGN] do Control, chwilowo niedostępny',
+      '[CALLSIGN] do Control, zajęty, proszę o chwilę',
+      '[CALLSIGN] do Control, proszę o wstrzymanie zgłoszeń, zajęty'
     ]},
     { t:'lines', h:'Rozwiązanie patrolu', lines:[
-      '[CALLSIGN] do Central, proszę o rozwiązanie patrolu [CALLSIGN]'
+      '[CALLSIGN] do Control, proszę o rozwiązanie patrolu [CALLSIGN]'
     ]},
     { t:'lines', h:'Koniec służby', lines:[
-      '[NAZWISKO] [NRODZNAKI] do Central, proszę o oznaczenie jako offduty'
+      '[NAZWISKO] [NRODZNAKI] do Control, proszę o oznaczenie jako offduty'
     ]},
     { t:'prose', html:'<p>Offduty podajesz nazwiskiem i odznaką, nie callsignem — patrol w tym momencie już nie istnieje.</p>' }
   ]},
@@ -295,26 +295,26 @@ var GROUPS = [
 { id:'kod6', title:'Kod 6 — kontrola i interwencja', lead:'Kod 6 nadajesz dopiero po dotarciu na miejsce, wychodząc z wozu. Zawsze z lokalizacją albo opisem.',
   blocks:[
     { t:'lines', h:'Kontrola drogowa', lines:[
-      '[CALLSIGN] do Central, kod 6, [kolor] [pojazd], [liczba] obywateli, indeks stanowy [indeks stanowy]',
-      '[CALLSIGN] do Central, kod 6, czarny SUV, 1 obywatel, indeks stanowy niewidoczny',
-      '[CALLSIGN] do Central, kod 6, czarny Sultan, 2 obywateli, indeks stanowy LS1234',
-      '[CALLSIGN] do Central, kod 6, czerwony Buffalo, 1 obywatel, brak indeksu stanowego',
-      '[CALLSIGN] do Central, kod 6, czarny Sultan, 2 obywateli, podejrzane zachowanie'
+      '[CALLSIGN] do Control, kod 6, [kolor] [pojazd], [liczba] obywateli, indeks stanowy [indeks stanowy]',
+      '[CALLSIGN] do Control, kod 6, czarny SUV, 1 obywatel, indeks stanowy niewidoczny',
+      '[CALLSIGN] do Control, kod 6, czarny Sultan, 2 obywateli, indeks stanowy LS1234',
+      '[CALLSIGN] do Control, kod 6, czerwony Buffalo, 1 obywatel, brak indeksu stanowego',
+      '[CALLSIGN] do Control, kod 6, czarny Sultan, 2 obywateli, podejrzane zachowanie'
     ]},
     { t:'lines', h:'Inne czynności w terenie', lines:[
-      '[CALLSIGN] do Central, kod 6 na [lokalizacja]',
-      '[CALLSIGN] do Central, kod 6, sprawdzam osobę',
-      '[CALLSIGN] do Central, kod 6, sprawdzam pojazd',
-      '[CALLSIGN] do Central, kod 6, sprawdzam budynek',
-      '[CALLSIGN] do Central, kod 6, podejrzana osoba'
+      '[CALLSIGN] do Control, kod 6 na [lokalizacja]',
+      '[CALLSIGN] do Control, kod 6, sprawdzam osobę',
+      '[CALLSIGN] do Control, kod 6, sprawdzam pojazd',
+      '[CALLSIGN] do Control, kod 6, sprawdzam budynek',
+      '[CALLSIGN] do Control, kod 6, podejrzana osoba'
     ]},
     { t:'lines', h:'Gdy sytuacja się rozwija', lines:[
-      '[CALLSIGN] do Central, kod 6, proszę o backup na moją lokalizację',
-      '[CALLSIGN] do Central, kod 6, sytuacja eskaluje, potrzebuję backupu',
-      '[CALLSIGN] do Central, kod 6, proszę o dodatkową jednostkę'
+      '[CALLSIGN] do Control, kod 6, proszę o backup na moją lokalizację',
+      '[CALLSIGN] do Control, kod 6, sytuacja eskaluje, potrzebuję backupu',
+      '[CALLSIGN] do Control, kod 6, proszę o dodatkową jednostkę'
     ]},
     { t:'lines', h:'Zejście z kodu 6 — dokładnie tak', lines:[
-      '[CALLSIGN] do Central, kod 4 po kodzie 6, proszę o oznaczenie jako wolny do patrolu'
+      '[CALLSIGN] do Control, kod 4 po kodzie 6, proszę o oznaczenie jako wolny do patrolu'
     ]},
     { t:'prose', html:
       '<p>Na kodzie 6 dalej słuchasz radia i możesz zostać przekierowany do pilniejszego zgłoszenia. Jeśli nie możesz się oderwać, powiedz dlaczego — masz zatrzymanego, zabezpieczasz miejsce przestępstwa albo jesteś jednostką wspierającą.</p>' }
@@ -324,14 +324,14 @@ var GROUPS = [
 { id:'backup', title:'Backup i asysta',
   blocks:[
     { t:'lines', h:'Prośba o jednostki', lines:[
-      '[CALLSIGN] do Central, proszę o backup',
-      '[CALLSIGN] do Central, proszę o jedną jednostkę do wsparcia na [lokalizacja]',
-      '[CALLSIGN] do Central, proszę o dwie jednostki do wsparcia na [lokalizacja]',
-      '[CALLSIGN] do Central, pilnie potrzebuję backupu',
-      '[CALLSIGN] do Central, potrzebuję backupu, możliwe uzbrojenie'
+      '[CALLSIGN] do Control, proszę o backup',
+      '[CALLSIGN] do Control, proszę o jedną jednostkę do wsparcia na [lokalizacja]',
+      '[CALLSIGN] do Control, proszę o dwie jednostki do wsparcia na [lokalizacja]',
+      '[CALLSIGN] do Control, pilnie potrzebuję backupu',
+      '[CALLSIGN] do Control, potrzebuję backupu, możliwe uzbrojenie'
     ]},
     { t:'lines', h:'Transport zatrzymanego', lines:[
-      '[CALLSIGN] do Central, proszę o jednostkę do transportu zatrzymanego'
+      '[CALLSIGN] do Control, proszę o jednostkę do transportu zatrzymanego'
     ]}
   ]},
 
@@ -339,13 +339,13 @@ var GROUPS = [
 { id:'fts', title:'Felony Traffic Stop', lead:'FTS zawsze z asystą. Sam go nie prowadzisz.',
   blocks:[
     { t:'lines', lines:[
-      '[CALLSIGN] do Central, proszę o asystę do FTS na [lokalizacja]',
-      '[CALLSIGN] do Central, FTS, proszę o dodatkową jednostkę',
-      '[CALLSIGN] do Central, FTS, proszę o dwie jednostki',
-      '[CALLSIGN] do Central, FTS, pojazd [opis], [liczba] podejrzanych'
+      '[CALLSIGN] do Control, proszę o asystę do FTS na [lokalizacja]',
+      '[CALLSIGN] do Control, FTS, proszę o dodatkową jednostkę',
+      '[CALLSIGN] do Control, FTS, proszę o dwie jednostki',
+      '[CALLSIGN] do Control, FTS, pojazd [opis], [liczba] podejrzanych'
     ]},
     { t:'lines', h:'Przy intensywnej komunikacji', lines:[
-      '[CALLSIGN] do Central, przechodzę na Simplex [nr]'
+      '[CALLSIGN] do Control, przechodzę na Simplex [nr]'
     ]}
   ]},
 
@@ -353,19 +353,19 @@ var GROUPS = [
 { id:'poscig', title:'Pościg', lead:'Przy pościgu licz się z tym, że nadajesz na bieżąco: lokalizacja, kierunek, pojazd, liczba osób, zagrożenie.',
   blocks:[
     { t:'lines', h:'Rozpoczęcie', lines:[
-      '[CALLSIGN] do Central, rozpoczynam pościg zmotoryzowany',
-      '[CALLSIGN] do Central, rozpoczynam pościg pieszy',
-      '[CALLSIGN] do Central, aktywny pościg zmotoryzowany, [lokalizacja]'
+      '[CALLSIGN] do Control, rozpoczynam pościg zmotoryzowany',
+      '[CALLSIGN] do Control, rozpoczynam pościg pieszy',
+      '[CALLSIGN] do Control, aktywny pościg zmotoryzowany, [lokalizacja]'
     ]},
     { t:'lines', h:'Opis w trakcie', lines:[
-      '[CALLSIGN] do Central, pościg za czarnym Sultanem, 2 podejrzanych, kierunek [kierunek]',
-      '[CALLSIGN] do Central, podejrzany pojazd oddala się w kierunku [kierunek]',
-      '[CALLSIGN] do Central, pościg pieszy, podejrzany biegnie w kierunku [kierunek]',
-      '[CALLSIGN] do Central, potrzebuję dodatkowych jednostek do wsparcia pościgu'
+      '[CALLSIGN] do Control, pościg za czarnym Sultanem, 2 podejrzanych, kierunek [kierunek]',
+      '[CALLSIGN] do Control, podejrzany pojazd oddala się w kierunku [kierunek]',
+      '[CALLSIGN] do Control, pościg pieszy, podejrzany biegnie w kierunku [kierunek]',
+      '[CALLSIGN] do Control, potrzebuję dodatkowych jednostek do wsparcia pościgu'
     ]},
     { t:'lines', h:'Zakończenie', lines:[
-      '[CALLSIGN] do Central, pościg zakończony, podejrzany zatrzymany',
-      '[CALLSIGN] do Central, pościg zakończony, podejrzany zgubiony'
+      '[CALLSIGN] do Control, pościg zakończony, podejrzany zatrzymany',
+      '[CALLSIGN] do Control, pościg zakończony, podejrzany zgubiony'
     ]}
   ]},
 
@@ -373,11 +373,11 @@ var GROUPS = [
 { id:'zatrzymanie', title:'Zatrzymanie',
   blocks:[
     { t:'lines', lines:[
-      '[CALLSIGN] do Central, 1 zatrzymany',
-      '[CALLSIGN] do Central, [liczba] zatrzymanych',
-      '[CALLSIGN] do Central, podejrzany zatrzymany, brak dalszego zagrożenia',
-      '[CALLSIGN] do Central, proszę o transport dla zatrzymanego',
-      '[CALLSIGN] do Central, kod 4 po kodzie 6, proszę o oznaczenie jako wolny do patrolu'
+      '[CALLSIGN] do Control, 1 zatrzymany',
+      '[CALLSIGN] do Control, [liczba] zatrzymanych',
+      '[CALLSIGN] do Control, podejrzany zatrzymany, brak dalszego zagrożenia',
+      '[CALLSIGN] do Control, proszę o transport dla zatrzymanego',
+      '[CALLSIGN] do Control, kod 4 po kodzie 6, proszę o oznaczenie jako wolny do patrolu'
     ]}
   ]},
 
@@ -385,15 +385,15 @@ var GROUPS = [
 { id:'bron', title:'Broń i zagrożenie', lead:'Nie owijaj. Jeśli widzisz broń, mów to pierwszym zdaniem.',
   blocks:[
     { t:'lines', lines:[
-      '[CALLSIGN] do Central, podejrzany możliwie uzbrojony',
-      '[CALLSIGN] do Central, podejrzany uzbrojony, widoczna broń palna',
-      '[CALLSIGN] do Central, podejrzany uzbrojony, pilnie proszę o backup',
-      '[CALLSIGN] do Central, możliwa broń palna, proszę o dodatkowe jednostki'
+      '[CALLSIGN] do Control, podejrzany możliwie uzbrojony',
+      '[CALLSIGN] do Control, podejrzany uzbrojony, widoczna broń palna',
+      '[CALLSIGN] do Control, podejrzany uzbrojony, pilnie proszę o backup',
+      '[CALLSIGN] do Control, możliwa broń palna, proszę o dodatkowe jednostki'
     ]},
     { t:'lines', h:'Wyposażenie', lines:[
-      '[CALLSIGN] do Central, proszę o Code Tom',
-      '[CALLSIGN] do Central, proszę o Code Sam',
-      '[CALLSIGN] do Central, proszę o Code Robert-Rifle'
+      '[CALLSIGN] do Control, proszę o Code Tom',
+      '[CALLSIGN] do Control, proszę o Code Sam',
+      '[CALLSIGN] do Control, proszę o Code Robert-Rifle'
     ]},
     { t:'defs', rows:[
       ['Code Robert','karabin patrolowy'],
@@ -406,19 +406,19 @@ var GROUPS = [
 { id:'osoby', title:'Osoby i pojazdy',
   blocks:[
     { t:'lines', h:'Podejrzana osoba', lines:[
-      '[CALLSIGN] do Central, sprawdzam podejrzaną osobę na [lokalizacja]',
-      '[CALLSIGN] do Central, [liczba] podejrzanych, sprawdzam'
+      '[CALLSIGN] do Control, sprawdzam podejrzaną osobę na [lokalizacja]',
+      '[CALLSIGN] do Control, [liczba] podejrzanych, sprawdzam'
     ]},
     { t:'lines', h:'Pojazd', lines:[
-      '[CALLSIGN] do Central, sprawdzam pojazd na [lokalizacja]',
-      '[CALLSIGN] do Central, porzucony pojazd na [lokalizacja]',
-      '[CALLSIGN] do Central, pojazd bez indeksu stanowego na [lokalizacja]',
-      '[CALLSIGN] do Central, pojazd możliwie kradziony, [kolor] [model], indeks stanowy [indeks stanowy]'
+      '[CALLSIGN] do Control, sprawdzam pojazd na [lokalizacja]',
+      '[CALLSIGN] do Control, porzucony pojazd na [lokalizacja]',
+      '[CALLSIGN] do Control, pojazd bez indeksu stanowego na [lokalizacja]',
+      '[CALLSIGN] do Control, pojazd możliwie kradziony, [kolor] [model], indeks stanowy [indeks stanowy]'
     ]},
     { t:'lines', h:'Opis pojazdu', lines:[
-      '[CALLSIGN] do Central, czarny Sultan, 2 drzwi, brak indeksu stanowego',
-      '[CALLSIGN] do Central, biały SUV, 4 drzwi, indeks stanowy [indeks stanowy]',
-      '[CALLSIGN] do Central, czerwony Buffalo, widoczne uszkodzenia'
+      '[CALLSIGN] do Control, czarny Sultan, 2 drzwi, brak indeksu stanowego',
+      '[CALLSIGN] do Control, biały SUV, 4 drzwi, indeks stanowy [indeks stanowy]',
+      '[CALLSIGN] do Control, czerwony Buffalo, widoczne uszkodzenia'
     ]}
   ]},
 
@@ -426,16 +426,16 @@ var GROUPS = [
 { id:'zdarzenia', title:'Bójka, napad, włamanie',
   blocks:[
     { t:'lines', h:'Bójka', lines:[
-      '[CALLSIGN] do Central, bójka na [lokalizacja], kilku podejrzanych',
-      '[CALLSIGN] do Central, bójka na [lokalizacja], możliwa broń'
+      '[CALLSIGN] do Control, bójka na [lokalizacja], kilku podejrzanych',
+      '[CALLSIGN] do Control, bójka na [lokalizacja], możliwa broń'
     ]},
     { t:'lines', h:'Napad', lines:[
-      '[CALLSIGN] do Central, aktywny napad na [lokalizacja]',
-      '[CALLSIGN] do Central, napad na [lokalizacja], [liczba] podejrzanych, możliwa broń'
+      '[CALLSIGN] do Control, aktywny napad na [lokalizacja]',
+      '[CALLSIGN] do Control, napad na [lokalizacja], [liczba] podejrzanych, możliwa broń'
     ]},
     { t:'lines', h:'Włamanie', lines:[
-      '[CALLSIGN] do Central, włamanie na [lokalizacja]',
-      '[CALLSIGN] do Central, aktywne włamanie, możliwy podejrzany wewnątrz'
+      '[CALLSIGN] do Control, włamanie na [lokalizacja]',
+      '[CALLSIGN] do Control, aktywne włamanie, możliwy podejrzany wewnątrz'
     ]}
   ]},
 
@@ -443,17 +443,17 @@ var GROUPS = [
 { id:'kolizje', title:'Kolizje i EMS',
   blocks:[
     { t:'lines', h:'Kolizja', lines:[
-      '[CALLSIGN] do Central, kolizja na [lokalizacja], brak rannych',
-      '[CALLSIGN] do Central, wypadek drogowy na [lokalizacja], możliwe osoby ranne',
-      '[CALLSIGN] do Central, proszę o jednostki do zabezpieczenia wypadku',
-      '[CALLSIGN] do Central, droga zabezpieczona'
+      '[CALLSIGN] do Control, kolizja na [lokalizacja], brak rannych',
+      '[CALLSIGN] do Control, wypadek drogowy na [lokalizacja], możliwe osoby ranne',
+      '[CALLSIGN] do Control, proszę o jednostki do zabezpieczenia wypadku',
+      '[CALLSIGN] do Control, droga zabezpieczona'
     ]},
     { t:'lines', h:'EMS', lines:[
-      '[CALLSIGN] do Central, proszę o EMS na moją lokalizację',
-      '[CALLSIGN] do Central, [liczba] osoby ranne, proszę o EMS',
-      '[CALLSIGN] do Central, osoba nieprzytomna, proszę o pilne EMS',
-      '[CALLSIGN] do Central, miejsce zabezpieczone, EMS może wjechać',
-      '[CALLSIGN] do Central, aktywne zagrożenie, EMS nie wjeżdża'
+      '[CALLSIGN] do Control, proszę o EMS na moją lokalizację',
+      '[CALLSIGN] do Control, [liczba] osoby ranne, proszę o EMS',
+      '[CALLSIGN] do Control, osoba nieprzytomna, proszę o pilne EMS',
+      '[CALLSIGN] do Control, miejsce zabezpieczone, EMS może wjechać',
+      '[CALLSIGN] do Control, aktywne zagrożenie, EMS nie wjeżdża'
     ]}
   ]},
 
@@ -461,10 +461,10 @@ var GROUPS = [
 { id:'shots', title:'Shots Fired',
   blocks:[
     { t:'lines', lines:[
-      '[CALLSIGN] do Central, Shots Fired na [lokalizacja]',
-      '[CALLSIGN] do Central, słyszę strzały w rejonie [lokalizacja]',
-      '[CALLSIGN] do Central, Shots Fired, potrzebuję backupu',
-      '[CALLSIGN] do Central, Shots Fired, możliwy aktywny strzelec, potrzebuję wszystkich dostępnych jednostek'
+      '[CALLSIGN] do Control, Shots Fired na [lokalizacja]',
+      '[CALLSIGN] do Control, słyszę strzały w rejonie [lokalizacja]',
+      '[CALLSIGN] do Control, Shots Fired, potrzebuję backupu',
+      '[CALLSIGN] do Control, Shots Fired, możliwy aktywny strzelec, potrzebuję wszystkich dostępnych jednostek'
     ]}
   ]},
 
@@ -472,12 +472,12 @@ var GROUPS = [
 { id:'officer', title:'Officer Needs Help / Officer Down', lead:'Najwyższy priorytet. Krótko, z lokalizacją, bez opisywania szczegółów.',
   blocks:[
     { t:'lines', h:'Officer Needs Help', lines:[
-      '[CALLSIGN] do Central, Officer Needs Help na [lokalizacja]',
-      '[CALLSIGN] do Central, Officer Needs Help, potrzebuję natychmiastowego backupu'
+      '[CALLSIGN] do Control, Officer Needs Help na [lokalizacja]',
+      '[CALLSIGN] do Control, Officer Needs Help, potrzebuję natychmiastowego backupu'
     ]},
     { t:'lines', h:'Officer Down', lines:[
-      '[CALLSIGN] do Central, Officer Down na [lokalizacja]',
-      '[CALLSIGN] do Central, Officer Down, aktywne zagrożenie, wymagane wszystkie dostępne jednostki'
+      '[CALLSIGN] do Control, Officer Down na [lokalizacja]',
+      '[CALLSIGN] do Control, Officer Down, aktywne zagrożenie, wymagane wszystkie dostępne jednostki'
     ]}
   ]},
 
@@ -485,8 +485,8 @@ var GROUPS = [
 { id:'simplex', title:'Simplex', lead:'Simplex to osobny kanał na jedną akcję, żeby nie zapychać głównego radia.',
   blocks:[
     { t:'lines', lines:[
-      '[CALLSIGN] do Central, przechodzę na Simplex [nr]',
-      '[CALLSIGN] do Central, proszę o przydzielenie kanału Simplex'
+      '[CALLSIGN] do Control, przechodzę na Simplex [nr]',
+      '[CALLSIGN] do Control, proszę o przydzielenie kanału Simplex'
     ]},
     { t:'ul', h:'Kiedy używać', items:[
       'pościg',
@@ -515,31 +515,31 @@ var GROUPS = [
       ['Code 100','Czasowa obserwacja prawdopodobnej drogi ucieczki.']
     ]},
     { t:'lines', h:'Code 4', lines:[
-      '[CALLSIGN] do Central, kod 4, sytuacja opanowana',
-      '[CALLSIGN] do Central, kod 4, backup niepotrzebny',
-      '[CALLSIGN] do Central, kod 4 po kodzie 6, proszę o oznaczenie jako wolny do patrolu'
+      '[CALLSIGN] do Control, kod 4, sytuacja opanowana',
+      '[CALLSIGN] do Control, kod 4, backup niepotrzebny',
+      '[CALLSIGN] do Control, kod 4 po kodzie 6, proszę o oznaczenie jako wolny do patrolu'
     ]},
     { t:'lines', h:'Code 5', lines:[
-      '[CALLSIGN] do Central, kod 5 na [lokalizacja]',
-      '[CALLSIGN] do Central, pozostaję kod 5 na [lokalizacja]'
+      '[CALLSIGN] do Control, kod 5 na [lokalizacja]',
+      '[CALLSIGN] do Control, pozostaję kod 5 na [lokalizacja]'
     ]},
     { t:'lines', h:'Code 7', lines:[
-      '[CALLSIGN] do Central, kod 7',
-      '[CALLSIGN] do Central, kod 7 zakończony, wracam do dyspozycji'
+      '[CALLSIGN] do Control, kod 7',
+      '[CALLSIGN] do Control, kod 7 zakończony, wracam do dyspozycji'
     ]},
     { t:'lines', h:'Code 30', lines:[
-      '[CALLSIGN] do Central, reaguję do kodu 30 na [lokalizacja]',
-      '[CALLSIGN] do Central, kod 30 fałszywy alarm',
-      '[CALLSIGN] do Central, kod 30 potwierdzone włamanie'
+      '[CALLSIGN] do Control, reaguję do kodu 30 na [lokalizacja]',
+      '[CALLSIGN] do Control, kod 30 fałszywy alarm',
+      '[CALLSIGN] do Control, kod 30 potwierdzone włamanie'
     ]},
     { t:'lines', h:'Code 37', lines:[
-      '[CALLSIGN] do Central, kod 37, czarny Sultan, indeks stanowy [indeks stanowy]',
-      '[CALLSIGN] do Central, kontakt wzrokowy z pojazdem, kod 37, [lokalizacja]',
-      '[CALLSIGN] do Central, kod 37 zatrzymany'
+      '[CALLSIGN] do Control, kod 37, czarny Sultan, indeks stanowy [indeks stanowy]',
+      '[CALLSIGN] do Control, kontakt wzrokowy z pojazdem, kod 37, [lokalizacja]',
+      '[CALLSIGN] do Control, kod 37 zatrzymany'
     ]},
     { t:'lines', h:'Code 100', lines:[
-      '[CALLSIGN] do Central, kod 100 na [lokalizacja]',
-      '[CALLSIGN] do Central, kod 100, zabezpieczam kierunek ucieczki'
+      '[CALLSIGN] do Control, kod 100 na [lokalizacja]',
+      '[CALLSIGN] do Control, kod 100, zabezpieczam kierunek ucieczki'
     ]}
   ]},
 
@@ -547,15 +547,15 @@ var GROUPS = [
 { id:'miejsce', title:'Na miejscu i powtórzenia',
   blocks:[
     { t:'lines', h:'Dojazd', lines:[
-      '[CALLSIGN] do Central, jestem na miejscu',
-      '[CALLSIGN] do Central, rozpoczynam interwencję',
-      '[CALLSIGN] do Central, sytuacja opanowana, brak zagrożenia',
-      '[CALLSIGN] do Central, sytuacja na miejscu eskaluje'
+      '[CALLSIGN] do Control, jestem na miejscu',
+      '[CALLSIGN] do Control, rozpoczynam interwencję',
+      '[CALLSIGN] do Control, sytuacja opanowana, brak zagrożenia',
+      '[CALLSIGN] do Control, sytuacja na miejscu eskaluje'
     ]},
     { t:'lines', h:'Gdy czegoś nie usłyszałeś', lines:[
-      '[CALLSIGN] do Central, powtórz ostatni komunikat',
-      '[CALLSIGN] do Central, powtórz lokalizację',
-      '[CALLSIGN] do Central, powtórz opis pojazdu'
+      '[CALLSIGN] do Control, powtórz ostatni komunikat',
+      '[CALLSIGN] do Control, powtórz lokalizację',
+      '[CALLSIGN] do Control, powtórz opis pojazdu'
     ]},
     { t:'prose', html:'<p>Lepiej dopytać, niż pojechać na drugi koniec miasta.</p>' }
   ]},
@@ -600,18 +600,18 @@ var GROUPS = [
 /* ---------------------------------------------------------- */
 { id:'gotowce', title:'Gotowce — dziesięć sekund przed wejściem', lead:'Jeśli masz zapamiętać tylko jedną sekcję, to tę.',
   blocks:[
-    { t:'lines', h:'Wejście na służbę', lines:['[CALLSIGN] do Central, proszę o oznaczenie jako patrol'] },
-    { t:'lines', h:'Kontrola drogowa', lines:['[CALLSIGN] do Central, kod 6, [pojazd], [liczba] obywateli, indeks stanowy [indeks stanowy]'] },
-    { t:'lines', h:'Powrót do patrolu', lines:['[CALLSIGN] do Central, kod 4 po kodzie 6, proszę o oznaczenie jako wolny do patrolu'] },
-    { t:'lines', h:'Backup', lines:['[CALLSIGN] do Central, proszę o backup'] },
-    { t:'lines', h:'FTS', lines:['[CALLSIGN] do Central, proszę o asystę do FTS'] },
-    { t:'lines', h:'Pościg', lines:['[CALLSIGN] do Central, rozpoczynam pościg zmotoryzowany'] },
-    { t:'lines', h:'Simplex', lines:['[CALLSIGN] do Central, przechodzę na Simplex [nr]'] },
-    { t:'lines', h:'Shots Fired', lines:['[CALLSIGN] do Central, Shots Fired na [lokalizacja]'] },
-    { t:'lines', h:'Officer Needs Help', lines:['[CALLSIGN] do Central, Officer Needs Help, potrzebuję natychmiastowego backupu'] },
-    { t:'lines', h:'Officer Down', lines:['[CALLSIGN] do Central, Officer Down na [lokalizacja]'] },
-    { t:'lines', h:'Rozwiązanie patrolu', lines:['[CALLSIGN] do Central, proszę o rozwiązanie patrolu [CALLSIGN]'] },
-    { t:'lines', h:'Offduty', lines:['[NAZWISKO] [NRODZNAKI] do Central, proszę o oznaczenie jako offduty'] }
+    { t:'lines', h:'Wejście na służbę', lines:['[CALLSIGN] do Control, proszę o oznaczenie jako patrol'] },
+    { t:'lines', h:'Kontrola drogowa', lines:['[CALLSIGN] do Control, kod 6, [pojazd], [liczba] obywateli, indeks stanowy [indeks stanowy]'] },
+    { t:'lines', h:'Powrót do patrolu', lines:['[CALLSIGN] do Control, kod 4 po kodzie 6, proszę o oznaczenie jako wolny do patrolu'] },
+    { t:'lines', h:'Backup', lines:['[CALLSIGN] do Control, proszę o backup'] },
+    { t:'lines', h:'FTS', lines:['[CALLSIGN] do Control, proszę o asystę do FTS'] },
+    { t:'lines', h:'Pościg', lines:['[CALLSIGN] do Control, rozpoczynam pościg zmotoryzowany'] },
+    { t:'lines', h:'Simplex', lines:['[CALLSIGN] do Control, przechodzę na Simplex [nr]'] },
+    { t:'lines', h:'Shots Fired', lines:['[CALLSIGN] do Control, Shots Fired na [lokalizacja]'] },
+    { t:'lines', h:'Officer Needs Help', lines:['[CALLSIGN] do Control, Officer Needs Help, potrzebuję natychmiastowego backupu'] },
+    { t:'lines', h:'Officer Down', lines:['[CALLSIGN] do Control, Officer Down na [lokalizacja]'] },
+    { t:'lines', h:'Rozwiązanie patrolu', lines:['[CALLSIGN] do Control, proszę o rozwiązanie patrolu [CALLSIGN]'] },
+    { t:'lines', h:'Offduty', lines:['[NAZWISKO] [NRODZNAKI] do Control, proszę o oznaczenie jako offduty'] }
   ]}
 
 ];
@@ -709,7 +709,7 @@ function render(){
       });
     }
     html += '<section id="s-' + g.id + '">'
-      + '<h2>' + esc(g.title) + (g.central ? '<span class="tag">Central</span>' : '') + '</h2>'
+      + '<h2>' + esc(g.title) + (g.Control ? '<span class="tag">Control</span>' : '') + '</h2>'
       + (g.lead && !q ? '<p class="lead">' + esc(g.lead) + '</p>' : '')
       + body + '</section>';
   });
